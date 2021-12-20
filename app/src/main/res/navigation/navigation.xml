@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/klassListFragment">
+
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.databaseexample.Users.UserFragment"
+        android:label="UserFragment" >
+        <action
+            android:id="@+id/action_userFragment_to_userListFragment"
+            app:destination="@id/userListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userListFragment"
+        android:name="com.example.databaseexample.Users.UserListFragment"
+        android:label="UserListFragment" >
+        <action
+            android:id="@+id/action_userListFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+        <action
+            android:id="@+id/action_userListFragment_to_klassListFragment2"
+            app:destination="@id/klassListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/klassFragment"
+        android:name="com.example.databaseexample.User.KlassFragment"
+        android:label="KlassFragment" >
+        <action
+            android:id="@+id/action_klassFragment_to_klassListFragment2"
+            app:destination="@id/klassListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/klassListFragment"
+        android:name="com.example.databaseexample.Klass.KlassListFragment"
+        android:label="KlassListFragment" >
+        <action
+            android:id="@+id/action_klassListFragment_to_userListFragment2"
+            app:destination="@id/userListFragment" />
+        <action
+            android:id="@+id/action_klassListFragment_to_klassFragment2"
+            app:destination="@id/klassFragment" />
+        <action
+            android:id="@+id/action_klassListFragment_to_klassDetailsFragment"
+            app:destination="@id/klassDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/klassDetailsFragment"
+        android:name="com.example.databaseexample.User.KlassDetailsFragment"
+        android:label="KlassDetailsFragment" >
+        <action
+            android:id="@+id/action_klassDetailsFragment_to_klassListFragment"
+            app:destination="@id/klassListFragment" />
+    </fragment>
+</navigation>

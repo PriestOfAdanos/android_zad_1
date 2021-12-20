@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DatabaseExample</string>
+    <string name="back_to_form">Back to form</string>
+</resources>
