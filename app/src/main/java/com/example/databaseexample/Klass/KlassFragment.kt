@@ -43,7 +43,7 @@ class KlassFragment: Fragment() {
 
         view.findViewById<Button>(R.id.button_klass_go_to_list).apply {
             setOnClickListener {
-               view.findNavController().navigate(R.id.action_klassFragment_to_klassListFragment2)
+               view.findNavController().navigate(R.id.action_klassFragment_to_klassListFragment)
             }
         }
 

@@ -48,13 +48,9 @@ class KlassListFragment: Fragment() {
         view.findViewById<Button>(R.id.button_back_to_form).apply {
             setOnClickListener {
 
-                it.findNavController().navigate(R.id.action_klassListFragment_to_klassFragment2)
+                it.findNavController().navigate(R.id.action_klassListFragment_to_klassFragment)
             }
         }
-
-
-
-
     }
 
 }

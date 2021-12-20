@@ -21,8 +21,7 @@ interface KlassDAO  {
 
     @Transaction
     @Query("SELECT * FROM klass_table")
-    fun getKlassWithStudents(klass: Klass): List<KlassWithStudents>
-
+    fun getKlassWithStudents(): LiveData<KlassWithStudents>
 }
 
 @Dao
@@ -36,6 +35,4 @@ interface GradeDAO  {
 
     @Query("SELECT * FROM grade_table")
     fun getAll(): LiveData<List<Grade>>
-
-
 }

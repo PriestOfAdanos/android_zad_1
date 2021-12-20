@@ -3,6 +3,7 @@ package com.example.databaseexample.Users
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.databaseexample.UsersDatabase
 import com.example.databaseexample.enitities.User
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
